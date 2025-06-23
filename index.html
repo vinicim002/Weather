@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="container-main">
+      <form id="barra-pesquisa">
+        <i class="fa-solid fa-location-dot"></i>
+        <input
+          type="search"
+          placeholder="Digite o  nome da cidade"
+          id="nome_cidade"
+          name="nome_cidade"
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
+
+      <div id="container-tempo">
+        <div id="info-cidade">
+          <i class="fa-solid fa-location-dot"></i>
+          <h2 id="cidade">Rio de Janeiro</h2>
+          <img id="bandeira" src="#" alt="Bandeira do país" />
+        </div>
+
+        <div id="info-tempo">
+          <p id="temperatura">40<span>°C</span></p>
+          <div id="descricao-tempo">
+            <p id="info-clima">Nublado</p>
+            <div id="img-tempo">
+              <img id="icone-tempo" src="#" alt="Ícone do tempo" />
+            </div>
+          </div>
+        </div>
+
+        <div id="container-info-gerais">
+          <div class="info-gerais">
+            <i class="fa-solid fa-temperature-high"></i>
+            <div class="texto-info">
+              <p class="label">Temp. max</p>
+              <p class="valor" id="temp-max">40 °C</p>
+            </div>
+          </div>
+
+          <div class="info-gerais">
+            <i class="fa-solid fa-temperature-low"></i>
+            <div class="texto-info">
+              <p class="label">Temp. min</p>
+              <p class="valor" id="temp-min">40 °C</p>
+            </div>
+          </div>
+
+          <div class="info-gerais">
+            <i class="fa-solid fa-droplet"></i>
+            <div class="texto-info">
+              <p class="label">Umidade</p>
+              <p class="valor" id="umidade">71%</p>
+            </div>
+          </div>
+
+          <div class="info-gerais">
+            <i class="fa-solid fa-wind"></i>
+            <div class="texto-info">
+              <p class="label">Vento</p>
+              <p class="valor" id="vento">15 km/h</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
