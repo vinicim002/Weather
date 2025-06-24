@@ -28,19 +28,19 @@
         </button>
       </form>
 
-      <div id="container-tempo">
+      <div id="container-tempo" class="hide">
         <div id="info-cidade">
           <i class="fa-solid fa-location-dot"></i>
-          <h2 id="cidade">Rio de Janeiro</h2>
+          <h2 id="cidade"></h2>
           <img id="bandeira" src="#" alt="Bandeira do país" />
         </div>
 
         <div id="info-tempo">
-          <p id="temperatura">40<span>°C</span></p>
+          <p id="temperatura"></p>
           <div id="descricao-tempo">
-            <p id="info-clima">Nublado</p>
+            <p id="info-clima"></p>
             <div id="img-tempo">
-              <img id="icone-tempo" src="#" alt="Ícone do tempo" />
+              <img id="icone-tempo" src="" alt="Ícone do tempo" />
             </div>
           </div>
         </div>
@@ -50,7 +50,7 @@
             <i class="fa-solid fa-temperature-high"></i>
             <div class="texto-info">
               <p class="label">Temp. max</p>
-              <p class="valor" id="temp-max">40 °C</p>
+              <p class="valor" id="temp-max"></p>
             </div>
           </div>
 
@@ -58,7 +58,7 @@
             <i class="fa-solid fa-temperature-low"></i>
             <div class="texto-info">
               <p class="label">Temp. min</p>
-              <p class="valor" id="temp-min">40 °C</p>
+              <p class="valor" id="temp-min"></p>
             </div>
           </div>
 
@@ -66,7 +66,7 @@
             <i class="fa-solid fa-droplet"></i>
             <div class="texto-info">
               <p class="label">Umidade</p>
-              <p class="valor" id="umidade">71%</p>
+              <p class="valor" id="umidade"></p>
             </div>
           </div>
 
@@ -79,6 +79,8 @@
           </div>
         </div>
       </div>
+
+      <div id="alert"></div>
     </div>
 
     <script src="src/js/index.js"></script>

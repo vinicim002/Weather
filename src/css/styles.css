@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: url("../img/img-noite.jpg");
+  background: url("../img/img-dia.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +43,6 @@ body {
   width: 100%;
   height: 5rem;
   padding: 1rem;
-  margin-bottom: 4rem;
 
   display: flex;
   justify-content: space-between;
@@ -54,7 +53,7 @@ body {
 }
 
 #barra-pesquisa:focus-within {
-  border: 2px solid #6037D9;
+  border: 2px solid #6037d9;
 }
 
 #nome_cidade {
@@ -64,7 +63,6 @@ body {
 
   font-size: 1.8rem;
   background: none;
-
 }
 
 #nome_cidade:focus {
@@ -75,12 +73,17 @@ body {
   font-size: 2rem;
 }
 
-button[type = submit] {
+button[type="submit"] {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /*container-tempo*/
+
+#container-tempo.hide {
+  display: none;
+}
 
 #container-tempo {
   display: flex;
@@ -92,6 +95,11 @@ button[type = submit] {
   width: 100%;
 }
 
+#bandeira {
+  width: 3rem;
+  height: fit-content;
+}
+
 /*info-cidade*/
 
 #info-cidade {
@@ -100,17 +108,28 @@ button[type = submit] {
   justify-content: center;
   align-items: center;
   column-gap: 2rem;
+  margin-top: 5rem;
 }
 
 #info-cidade .fa-location-dot {
-  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background: linear-gradient(
+    135deg,
+    rgb(252, 253, 255),
+    rgb(216, 231, 251),
+    rgb(213, 197, 234)
+  );
   background-clip: text;
   color: transparent;
   font-size: 4rem;
 }
 
 #cidade {
-  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background: linear-gradient(
+    135deg,
+    rgb(252, 253, 255),
+    rgb(216, 231, 251),
+    rgb(213, 197, 234)
+  );
   background-clip: text;
   color: transparent;
   font-size: 2rem;
@@ -130,7 +149,12 @@ button[type = submit] {
 #temperatura {
   font-size: 4rem;
   font-weight: bold;
-  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background: linear-gradient(
+    135deg,
+    rgb(252, 253, 255),
+    rgb(216, 231, 251),
+    rgb(213, 197, 234)
+  );
   background-clip: text;
   color: transparent;
 }
@@ -146,7 +170,12 @@ button[type = submit] {
 #info-clima {
   font-size: 1.6rem;
   font-weight: bold;
-  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background: linear-gradient(
+    135deg,
+    rgb(252, 253, 255),
+    rgb(216, 231, 251),
+    rgb(213, 197, 234)
+  );
   background-clip: text;
   color: transparent;
 }
@@ -154,7 +183,7 @@ button[type = submit] {
 #container-info-gerais {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   place-content: center;
   gap: 1rem;
 }
@@ -165,7 +194,12 @@ button[type = submit] {
   align-items: center;
   column-gap: 3rem;
 
-  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background: linear-gradient(
+    135deg,
+    rgb(252, 253, 255),
+    rgb(216, 231, 251),
+    rgb(213, 197, 234)
+  );
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -179,19 +213,45 @@ button[type = submit] {
   font-weight: 500;
 }
 
-
 .fa-temperature-high {
-  color: #FF0000;
+  color: #ff0000;
 }
 
 .fa-temperature-low {
-  color: #0095FF;
+  color: #0095ff;
 }
 
-.fa-droplet{
-  color: #0095FF;
+.fa-droplet {
+  color: #0095ff;
 }
 
 .fa-wind {
-  color: #9A1ECA;
+  color: #9a1eca;
+}
+
+/*alert*/
+
+#alert {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+
+  margin-top: 2rem;
+
+  background: linear-gradient(
+    135deg,
+    rgb(252, 253, 255),
+    rgb(216, 231, 251),
+    rgb(213, 197, 234)
+  );
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#alert img {
+  width: 40rem;
+  margin-top: 2rem;
 }
