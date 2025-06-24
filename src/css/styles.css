@@ -1,34 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    background: url("../img/img-dia.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 100vh;
+  background: url("../img/img-dia.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/*Container pai*/
 #container-main {
-    background: hsla(40, 7%, 8%, 0.6);
-    border-radius: 3rem;
-    width: 50rem;
+  background: hsla(40, 7%, 8%, 0.6);
+  backdrop-filter: blur(2rem);
+  border-radius: 3rem;
+  width: 50rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    padding: 2rem;
-}   
+  padding: 2rem;
+}
+
+/*Barra de pesquisa*/
+#barra-pesquisa {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: white;
+  border-radius: 3rem;
+}
+
+#barra-pesquisa:focus-within {
+  border: 2px solid #6037D9;
+}
+
+#nome_cidade {
+  width: 80%;
+  border: none;
+  padding: 1rem;
+
+  font-size: 1.8rem;
+  background: none;
+
+}
+
+#nome_cidade:focus {
+  outline: none;
+}
+
+.fa-solid {
+  font-size: 2rem;
+}
+
+button[type = submit] {
+  background: none;
+  border: none;
+}
+
+/*container-tempo*/
+
+#container-tempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+
+  width: 100%;
+}
+
+/*info-cidade*/
+
+#info-cidade {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+#info-cidade .fa-location-dot {
+  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background-clip: text;
+  color: transparent;
+  font-size: 4rem;
+}
+
+#cidade {
+  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+}
+
+/*info-tempo*/
+
+#info-tempo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+#temperatura {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background-clip: text;
+  color: transparent;
+}
+
+#descricao-tempo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+#info-clima {
+  font-size: 1.6rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  background-clip: text;
+  color: transparent;
+}
+
+#container-info-gerais {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  place-content: center;
+  gap: 1rem;
+}
+
+.info-gerais {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  column-gap: 3rem;
+
+  background: linear-gradient(135deg, rgb(252, 253, 255), rgb(216, 231, 251), rgb(213, 197, 234));
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.texto-info {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.valor {
+  font-weight: 500;
+}
+
+
+.fa-temperature-high {
+  color: #FF0000;
+}
+
+.fa-temperature-low {
+  color: #0095FF;
+}
+
+.fa-droplet{
+  color: #0095FF;
+}
+
+.fa-wind {
+  color: #9A1ECA;
+}
